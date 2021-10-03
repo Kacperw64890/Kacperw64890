@@ -1,0 +1,18 @@
+import java.util.Scanner
+import java.util.Random
+
+public class MyClass {
+    public static void main(String args[]){
+    
+    
+    Random rand = new Random();
+    int a = rand.nextInt(11);
+    
+    if(a%2==0){
+        System.out.println("liczba parzysta");
+    }else{
+    System.out.println("liczba nieparzysta");    
+    }
+    }
+}
+   
