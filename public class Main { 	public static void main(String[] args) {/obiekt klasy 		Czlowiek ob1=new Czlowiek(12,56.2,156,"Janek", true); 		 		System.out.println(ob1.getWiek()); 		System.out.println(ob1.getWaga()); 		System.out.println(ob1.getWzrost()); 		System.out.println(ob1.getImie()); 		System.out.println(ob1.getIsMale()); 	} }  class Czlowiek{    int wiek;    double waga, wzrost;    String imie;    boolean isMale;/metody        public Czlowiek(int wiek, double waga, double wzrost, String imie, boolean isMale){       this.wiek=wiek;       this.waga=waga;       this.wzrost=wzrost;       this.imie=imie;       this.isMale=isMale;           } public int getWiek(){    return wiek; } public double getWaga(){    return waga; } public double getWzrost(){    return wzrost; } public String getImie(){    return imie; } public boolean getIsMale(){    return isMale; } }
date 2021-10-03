@@ -1,0 +1,47 @@
+
+public class Main
+{
+	public static void main(String[] args) {
+		//obiekt klasy
+		Czlowiek ob1=new Czlowiek(12,56.2,156,"Janek", true);
+		
+		System.out.println(ob1.getWiek());
+		System.out.println(ob1.getWaga());
+		System.out.println(ob1.getWzrost());
+		System.out.println(ob1.getImie());
+		System.out.println(ob1.getIsMale());
+	}
+}
+
+class Czlowiek{
+   int wiek;
+   double waga, wzrost;
+   String imie;
+   boolean isMale;
+   
+   //metody
+   
+   public Czlowiek(int wiek, double waga, double wzrost, String imie, boolean isMale){
+      this.wiek=wiek;
+      this.waga=waga;
+      this.wzrost=wzrost;
+      this.imie=imie;
+      this.isMale=isMale;
+      
+   }
+public int getWiek(){
+   return wiek;
+}
+public double getWaga(){
+   return waga;
+}
+public double getWzrost(){
+   return wzrost;
+}
+public String getImie(){
+   return imie;
+}
+public boolean getIsMale(){
+   return isMale;
+}
+}
