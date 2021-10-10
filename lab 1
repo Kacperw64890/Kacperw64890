@@ -1,0 +1,14 @@
+// zad 7
+package com.company;
+
+public class Main {
+
+	 public static void main(String[] args) {
+                double first = 9.0;
+             double sqrt = Math.sqrt(first);
+
+
+               System.out.println("Pierwiastek z " + first + " wynosi: " + sqrt);
+
+    }
+}
