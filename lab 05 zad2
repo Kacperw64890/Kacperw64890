@@ -1,0 +1,32 @@
+
+package javaapplication2;
+import java.util.InputMismatchException;
+import java.util.Scanner;
+
+public class JavaApplication2 {
+
+    
+    public static void main(String[] args) {
+        System.out.println("podaj  liczbe: ");
+        Scanner input = new Scanner(System.in);
+        
+        double liczba =0;
+        
+        while(true){
+            try{
+                liczba = input.nextDouble();
+                break;
+            }
+            catch(InputMismatchException e){
+                System.out.println("podaj poprawna liczbe ");
+                input.next();
+            }
+        }
+        if (liczba<0){
+            throw new IllegalArgumentException(String.format("Pierwiastek kwadratowy z liczby rzeczywistej " + "< 0 nie istnieje"));
+        }
+            
+            System.out.println("pierwiastek z: " + liczba+ ", wynosi: "+ Math.sqrt(liczba));
+    
+    }
+
