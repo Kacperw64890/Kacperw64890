@@ -1,0 +1,13 @@
+package com.company;
+
+public class SrodekLokomocji {
+  double iloscMiejsc;
+  double cenaBiletu;
+
+    public SrodekLokomocji() {
+    }
+
+    public double getCenaBiletu() {
+        return cenaBiletu;
+    }
+}
