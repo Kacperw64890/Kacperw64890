@@ -1,0 +1,13 @@
+package com.company;
+
+public class Autobus extends SrodekLokomocji {
+    public Autobus(double iloscMiejsc) {
+        this.iloscMiejsc = iloscMiejsc;
+    }
+
+    public void ObliczCena(){
+        this.cenaBiletu = 50;
+        System.out.println("Cena biletu to: " + cenaBiletu);
+    }
+
+    }
